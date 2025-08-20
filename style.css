@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --cor-fundo: #00182C;
+    --cor-fundo2: #001425;
+    --cor-detalhes: #D8A32D;
+    --cor-letra: #D3D3D3;
+    --cor-titulo: #FFFFFF;
+    --cor-rodape-fundo: #01213D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+header {
+    background: transparent;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 140px;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--cor-detalhes);
+    font-weight: 100;
+}
+
+.nav-links li a:hover {
+    filter: brightness(0) invert(1) drop-shadow(0 0 5px gold);
+}
+
+.nav-icons {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-icons img {
+    height: 24px;
+    cursor: pointer;
+}
+
+.nav-icons img:hover {
+    filter: brightness(0) invert(1) drop-shadow(0 0 5px gold);
+}
+
+/* Seção principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.texto {
+    max-width: 50%;
+}
+
+.texto h1 {
+    color: var(--cor-detalhes);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.texto p {
+    color: var(--cor-letra);
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Card do produto */
+.produto {
+    border: 1px solid var(--cor-letra);
+    padding: 20px;
+    text-align: center;
+    background-color: var(--cor-rodape-fundo);
+    max-width: 200px;
+}
+
+.produto img {
+    max-width: 110%;
+}
+
+.produto h3 {
+    color: var(--cor-detalhes);
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.preco-antigo {
+    text-decoration: line-through;
+    font-size: 0.9rem;
+    color: var(--cor-letra);
+    font-family: "Open Sans", sans-serif;
+}
+
+.preco-novo {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--cor-titulo);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-rodape-fundo);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: 2px solid #FFFFFF;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+}
+
+footer h4 {
+    color: var(--cor-titulo);
+    margin-bottom: 10px;
+    font-weight: 100;
+    font-size: 22px;
+}
+
+footer a {
+    color: var(--cor-letra);
+    opacity: 0.8;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+footer p {
+    color: var(--cor-letra);
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+}
+
+footer #amarelo {
+    color: var(--cor-detalhes);
+    font-size: 12px;
+}
+
+.contatos img.icon {
+    width: 12px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.pagamento img {
+    width: 220px;
+    margin: 5px;
+}
